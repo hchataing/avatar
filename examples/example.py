@@ -40,7 +40,7 @@ from pandora.host_pb2 import (
 from pandora.security_pb2 import LE_LEVEL3, LEVEL2, PairingEventAnswer
 from typing import NoReturn, Optional
 
-
+@avatar.metrics  # type: ignore
 class ExampleTest(base_test.BaseTestClass):  # type: ignore[misc]
     devices: Optional[PandoraDevices] = None
 
